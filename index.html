@@ -1,333 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mir Shahzoor Ali — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mir Shahzoor Ali | Full Stack Developer</title>
+<meta name="description" content="Junior full stack developer in Hyderabad building MERN and React apps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<canvas id="c" aria-hidden="true"></canvas>
+<nav aria-label="Main"><a href="#top"><strong>Shahzoor</strong></a><div><a href="#about">About</a><a href="#work">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
+<main id="top">
+<div class="wrap hero"><div>
+<h1 class="hl">Mir Shahzoor Ali</h1>
+<p class="hl">I build full stack web apps: React on the front, Node and Express behind it, and a database that holds up. Junior developer based in Hyderabad.</p>
+<div class="hl"><a class="btn" href="#work">See my projects</a><a class="btn alt" href="mailto:mirshahzoorali79@gmail.com">Email me</a></div>
+</div></div>
 
-  <!-- NAV -->
-  <nav id="nav">
-    <a href="#hero" class="brand">MSA<span>.</span></a>
-    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="mailto:mirshahzoorali79@gmail.com" class="nav-hire">Hire Me ↗</a>
-  </nav>
+<section id="about"><div class="wrap"><div class="panel">
+<h2>About</h2>
+<p>I have a B.E. in Computer Science (AI &amp; ML), and I've spent the past year building MERN and React projects from the database up.</p>
+<p>Most of what I know came from getting stuck on a CORS error, a proxy that wouldn't forward, or state that wouldn't stay in sync, and working through it. I've also wired in third-party APIs like Google Gemini and TMDB.</p>
+<p>I'm looking for a junior full stack or frontend role where I can keep shipping and learning.</p>
+</div></div></section>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-blob blob-1"></div>
-    <div class="hero-blob blob-2"></div>
-    <div class="hero-blob blob-3"></div>
-    <div class="hero-inner">
-      <div class="hero-left">
-        <div class="hero-pill">
-          <span class="pill-dot"></span> Available for Work
-        </div>
-        <h1>
-          <span class="line-1">Full Stack</span>
-          <span class="line-2">Developer</span>
-          <span class="line-3">&amp; <em>AI</em> Builder.</span>
-        </h1>
-        <p class="hero-sub">Hi, I'm <strong>Mir Shahzoor Ali</strong> — a CS engineer from Hyderabad building powerful web apps and AI-driven solutions that make a real impact.</p>
-        <div class="hero-btns">
-          <a href="#projects" class="btn-grad">See My Projects</a>
-          <a href="#contact" class="btn-outline">Contact Me</a>
-        </div>
-        <div class="hero-stats">
-          <div class="hstat"><span class="hstat-n">2+</span><span class="hstat-l">Projects</span></div>
-          <div class="hstat-sep"></div>
-          <div class="hstat"><span class="hstat-n">4+</span><span class="hstat-l">Tech Stacks</span></div>
-          <div class="hstat-sep"></div>
-          <div class="hstat"><span class="hstat-n">3</span><span class="hstat-l">Languages</span></div>
-          <div class="hstat-sep"></div>
-          <div class="hstat"><span class="hstat-n">7.0</span><span class="hstat-l">GPA</span></div>
-        </div>
-      </div>
-      <div class="hero-right">
-        <div class="hero-visual">
-          <div class="hv-ring hv-ring-1"></div>
-          <div class="hv-ring hv-ring-2"></div>
-          <div class="hv-card">
-            <div class="hvc-avatar">👨‍💻</div>
-            <div class="hvc-name">Mir Shahzoor Ali</div>
-            <div class="hvc-role">Full Stack · AI Engineer</div>
-            <div class="hvc-tags">
-              <span>React</span><span>Node.js</span><span>Python</span><span>AI/ML</span>
-            </div>
-            <div class="hvc-location">📍 Hyderabad, India</div>
-          </div>
-          <div class="hv-float f1">HTML/CSS</div>
-          <div class="hv-float f2">Node.js</div>
-          <div class="hv-float f3">Python</div>
-          <div class="hv-float f4">React</div>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-hint">
-      <div class="sh-mouse"><div class="sh-wheel"></div></div>
-      <span>Scroll down</span>
-    </div>
-  </section>
+<section id="work"><div class="wrap">
+<h2>Projects</h2>
+<div class="row"><div><h3>Dastarkhwan</h3></div><div>
+<p>A dark-themed, Swiggy-inspired food delivery app for Hyderabad, reworked across four iterations. It has its own search architecture and separate contexts for the user and the cart. A CORS proxy and a mock-data fallback keep it running when the live API doesn't.</p>
+<ul class="tags"><li>React</li><li>Context API</li><li>Parcel</li></ul></div></div>
+<div class="row"><div><h3>Smart Resume Analyzer &amp; Matcher</h3></div><div>
+<p>Upload a resume, paste a job description, and get a compatibility score, the keywords you're missing, and suggested bullet rewrites. Resume text is extracted on the server with pdfjs-dist, then scored with Google Gemini.</p>
+<ul class="tags"><li>React</li><li>Express</li><li>Google Gemini API</li></ul></div></div>
+<div class="row"><div><h3>Movie Recommendation System</h3></div><div>
+<p>Combines content-based filtering (TF-IDF on genres) with collaborative filtering on user-item ratings. The TMDB API keeps the catalog current with new and upcoming releases.</p>
+<ul class="tags"><li>Python</li><li>Pandas</li><li>scikit-learn</li></ul></div></div>
+<div class="row"><div><h3>Online Student Voting System</h3></div><div>
+<p>A role-based system for student elections: candidate listing, vote casting and results, with checks that stop anyone from voting twice.</p>
+<ul class="tags"><li>Academic project</li><li>Role-based access</li></ul></div></div>
+<div class="row"><div><h3>Weapon Detection System</h3></div><div>
+<p>A computer-vision model trained and evaluated for real-time weapon detection, balancing detection accuracy against inference speed.</p>
+<ul class="tags"><li>TensorFlow</li><li>Academic project</li></ul></div></div>
+<p style="margin-top:24px"><a href="https://github.com/Shahzoor79" rel="noopener">Browse the code on GitHub</a></p>
+</div></section>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="sec-intro">
-      <span class="eyebrow">What I Know</span>
-      <h2>My <span class="grad-text">Skills</span></h2>
-      <p>A versatile stack built to create complete, end-to-end solutions.</p>
-    </div>
-    <div class="skills-grid">
-      <div class="sk-card reveal" data-color="blue">
-        <div class="sk-top">
-          <span class="sk-ico">🎨</span>
-          <div class="sk-glow"></div>
-        </div>
-        <h3>Frontend</h3>
-        <p>Crafting beautiful, responsive interfaces users love to use.</p>
-        <div class="sk-chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div>
-      </div>
-      <div class="sk-card reveal" data-color="purple">
-        <div class="sk-top">
-          <span class="sk-ico">⚙️</span>
-          <div class="sk-glow"></div>
-        </div>
-        <h3>Backend</h3>
-        <p>Building scalable server-side logic and powerful APIs.</p>
-        <div class="sk-chips"><span>Node.js</span><span>Java</span><span>MERN Stack</span></div>
-      </div>
-      <div class="sk-card reveal" data-color="green">
-        <div class="sk-top">
-          <span class="sk-ico">🗄️</span>
-          <div class="sk-glow"></div>
-        </div>
-        <h3>Database</h3>
-        <p>Efficient data modelling with SQL and NoSQL databases.</p>
-        <div class="sk-chips"><span>MySQL</span><span>MongoDB</span></div>
-      </div>
-      <div class="sk-card reveal" data-color="orange">
-        <div class="sk-top">
-          <span class="sk-ico">🤖</span>
-          <div class="sk-glow"></div>
-        </div>
-        <h3>AI / ML</h3>
-        <p>Deep learning models powering real-world security systems.</p>
-        <div class="sk-chips"><span>Deep Learning</span><span>Computer Vision</span><span>CNN</span></div>
-      </div>
-      <div class="sk-card reveal" data-color="pink">
-        <div class="sk-top">
-          <span class="sk-ico">🛠️</span>
-          <div class="sk-glow"></div>
-        </div>
-        <h3>Tools</h3>
-        <p>Industry-standard tools for clean, collaborative development.</p>
-        <div class="sk-chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>AI Integration</span></div>
-      </div>
-    </div>
-  </section>
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Frontend</h3><p>React, JavaScript, HTML, CSS, Context API, Hooks, Routing</p></div>
+<div><h3>Backend</h3><p>Node.js, Express, REST APIs, Java</p></div>
+<div><h3>Databases</h3><p>MongoDB, MySQL</p></div>
+<div><h3>AI and ML</h3><p>Python, TensorFlow, Pandas, NumPy, scikit-learn</p></div>
+<div><h3>Tools</h3><p>Git, GitHub, VS Code, Parcel</p></div>
+<div><h3>Languages</h3><p>English, Hindi, Urdu</p></div>
+</div>
+</div></section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="projects-sec">
-    <div class="sec-intro">
-      <span class="eyebrow">What I've Built</span>
-      <h2>Featured <span class="grad-text">Projects</span></h2>
-      <p>Real applications solving real problems — click any card to view on GitHub.</p>
-    </div>
-    <div class="proj-grid">
+<section id="education"><div class="wrap">
+<h2>Education</h2>
+<dl class="edu">
+<dt>B.E. Computer Science (AI &amp; ML), 70%</dt><dd>Nawab Shah Alam Khan College of Engineering &amp; Technology</dd>
+<dt>Full Stack MERN + React JS Training</dt><dd>Career Guidance Council, Talent Development Center. React hooks, Context API, routing, and REST API integration with Node, Express and MongoDB.</dd>
+<dt>Intermediate (TSBIE), 78%</dt><dd>Sri Chaitanya Junior College</dd>
+</dl>
+</div></section>
 
-      <a class="proj-card reveal" href="https://github.com/Shahzoor79/Online-Student-Voting" target="_blank" rel="noopener noreferrer">
-        <div class="pc-glow pc-glow-blue"></div>
-        <div class="pc-number">01</div>
-        <div class="pc-icon">🗳️</div>
-        <div class="pc-badges">
-          <span class="badge blue">Web App</span>
-          <span class="badge blue">Full Stack</span>
-        </div>
-        <h3>Online Student Voting</h3>
-        <p>A secure digital voting platform for students, enabling transparent and efficient election processes within academic institutions.</p>
-        <div class="pc-tech">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>MySQL</span>
-        </div>
-        <div class="pc-footer">
-          <div class="pc-gh">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            View on GitHub ↗
-          </div>
-          <div class="pc-arrow">→</div>
-        </div>
-      </a>
+<section id="contact"><div class="wrap">
+<h2>Let's talk</h2>
+<a class="big" href="mailto:mirshahzoorali79@gmail.com">mirshahzoorali79@gmail.com</a>
+<a class="btn alt" href="https://www.linkedin.com/in/mir-shahzoor-ali-7740a6222/" rel="noopener">LinkedIn</a><a class="btn alt" href="https://github.com/Shahzoor79" rel="noopener">GitHub</a>
+</div></section>
+</main>
+<footer><div class="wrap">Built with Three.js and GSAP. Scroll to move the camera.</div></footer>
 
-      <a class="proj-card reveal" href="https://github.com/Shahzoor79/Weapon-Detection-System-Using-Deep-Learning" target="_blank" rel="noopener noreferrer">
-        <div class="pc-glow pc-glow-purple"></div>
-        <div class="pc-number">02</div>
-        <div class="pc-icon">🔍</div>
-        <div class="pc-badges">
-          <span class="badge purple">Deep Learning</span>
-          <span class="badge purple">AI / ML</span>
-        </div>
-        <h3>Weapon Detection System</h3>
-        <p>A deep learning-powered system for real-time weapon detection in video feeds — applying computer vision to enhance security and safety.</p>
-        <div class="pc-tech">
-          <span>Python</span><span>Deep Learning</span><span>Computer Vision</span><span>CNN</span>
-        </div>
-        <div class="pc-footer">
-          <div class="pc-gh">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            View on GitHub ↗
-          </div>
-          <div class="pc-arrow">→</div>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="edu-sec">
-    <div class="sec-intro">
-      <span class="eyebrow">My Background</span>
-      <h2>Education &amp; <span class="grad-text">Languages</span></h2>
-    </div>
-    <div class="edu-grid">
-      <div class="edu-card reveal">
-        <div class="edu-icon">🎓</div>
-        <div class="edu-year">2020 — 2026</div>
-        <h3>Bachelor of Engineering</h3>
-        <p class="edu-field">Computer Science — AI &amp; Machine Learning</p>
-        <p class="edu-inst">Nawab Shah Alam Khan College of Engineering and Technology</p>
-        <span class="edu-badge">GPA: 7.0 / 10</span>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-icon">📚</div>
-        <div class="edu-year">2018 — 2020</div>
-        <h3>Intermediate Education</h3>
-        <p class="edu-field">Science Stream</p>
-        <p class="edu-inst">Sri Chaitanya Junior College — TSBIE</p>
-        <span class="edu-badge edu-badge-2">GPA: 7.8 / 10 &nbsp;|&nbsp; 78%</span>
-      </div>
-      <div class="lang-card reveal">
-        <h3>Languages</h3>
-        <p class="lang-sub">Spoken &amp; Written</p>
-        <div class="lang-list">
-          <div class="lang-item"><span class="lf">🇬🇧</span><div><strong>English</strong><span>Professional</span></div></div>
-          <div class="lang-item"><span class="lf">🇮🇳</span><div><strong>Hindi</strong><span>Native</span></div></div>
-          <div class="lang-item"><span class="lf">🌙</span><div><strong>Urdu</strong><span>Native</span></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="contact-sec">
-    <div class="contact-blob"></div>
-    <div class="sec-intro light">
-      <span class="eyebrow light-ey">Let's Connect</span>
-      <h2>Get In <span class="grad-text-light">Touch</span></h2>
-      <p>Open to full-time roles, freelance projects, or just a good chat about tech.</p>
-    </div>
-    <div class="contact-grid">
-      <a href="tel:+919160731254" class="ccard reveal">
-        <div class="cc-icon-wrap cc-blue"><span>📞</span></div>
-        <div class="cc-body">
-          <span class="cc-label">Phone</span>
-          <span class="cc-val">+91 91607 31254</span>
-        </div>
-        <span class="cc-arr">→</span>
-      </a>
-      <a href="mailto:mirshahzoorali79@gmail.com" class="ccard reveal">
-        <div class="cc-icon-wrap cc-purple"><span>✉️</span></div>
-        <div class="cc-body">
-          <span class="cc-label">Email</span>
-          <span class="cc-val">mirshahzoorali79@gmail.com</span>
-        </div>
-        <span class="cc-arr">→</span>
-      </a>
-      <a href="https://www.linkedin.com/in/mir-shahzoor-ali-7740a6222/" target="_blank" rel="noopener noreferrer" class="ccard reveal">
-        <div class="cc-icon-wrap cc-green"><span>💼</span></div>
-        <div class="cc-body">
-          <span class="cc-label">LinkedIn</span>
-          <span class="cc-val">mir-shahzoor-ali</span>
-        </div>
-        <span class="cc-arr">↗</span>
-      </a>
-      <a href="https://github.com/Shahzoor79" target="_blank" rel="noopener noreferrer" class="ccard reveal">
-        <div class="cc-icon-wrap cc-orange">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-        </div>
-        <div class="cc-body">
-          <span class="cc-label">GitHub</span>
-          <span class="cc-val">Shahzoor79</span>
-        </div>
-        <span class="cc-arr">↗</span>
-      </a>
-      <div class="ccard no-link reveal">
-        <div class="cc-icon-wrap cc-pink"><span>📍</span></div>
-        <div class="cc-body">
-          <span class="cc-label">Location</span>
-          <span class="cc-val">Old Malakpet, Hyderabad</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-left">
-      <span class="footer-brand">MSA<span>.</span></span>
-      <span>Mir Shahzoor Ali · Full Stack Developer</span>
-    </div>
-    <span>© 2026 · Hyderabad, India</span>
-  </footer>
-
-  <script>
-    // Nav scroll effect
-    window.addEventListener('scroll', () => {
-      document.getElementById('nav').classList.toggle('nav-scrolled', scrollY > 50);
-    }, { passive: true });
-
-    // Burger
-    const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('nav-links');
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('open');
-      navLinks.classList.toggle('open');
-    });
-    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      burger.classList.remove('open');
-      navLinks.classList.remove('open');
-    }));
-
-    // Active link
-    const secs = document.querySelectorAll('section[id]');
-    const anchors = document.querySelectorAll('.nav-links a');
-    window.addEventListener('scroll', () => {
-      let cur = '';
-      secs.forEach(s => { if (scrollY >= s.offsetTop - 130) cur = s.id; });
-      anchors.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
-    }, { passive: true });
-
-    // Reveal
-    const io = new IntersectionObserver(entries => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('in'), i * 100);
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
